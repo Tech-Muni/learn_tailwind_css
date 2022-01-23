@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Responsivness</title>
+  </head>
+  <body>
+    <!-- Hey, the website should not be only for certain device. It should be for all and you can make your website for all devices using responsivness -->
+    <!-- You can do the same using tailwindCss's breakpoint -->
+    <div class="mx-4 bg-green-700 text-white my-40 h-[3rem]">
+      This Div is not responsive
+    </div>
+    <!-- Productivity tip to make website responsive start from mobile then go for larger view port -->
+    <!-- Don't use sm: to target mobile devices Don't use sm: to target mobile devices Don't use sm: to target mobile devices -->
+    <!-- the above line is thrice to remind myself and a request to whosoever is reading this -->
+    <!-- Use unprefixed utilities to target mobile, and override them at larger breakpoints Use unprefixed utilities to target mobile, and override them at larger breakpoints Use unprefixed utilities to target mobile, and override them at larger breakpoints -->
+    <!-- and the class for small viewport is sm:{your normal classes} In official documentation it's written after 640px width this style is gonna apply -->
+    <div
+      class="lg:hidden mx-4 bg-green-700 text-white my-40 h-[3rem] sm:bg-green-400 sm:text-blue-900 md:bg-yellow-600 md:text-violet-800 lg:bg-red-700 lg:text-gray-900 xl:bg-emerald-800 xl:text-zinc-900 2xl:bg-teal-900 2xl:text-cyan-500 md:text-center lg:w-1/2"
+    >
+      This Div is responsive
+    </div>
+    <div
+      class="hidden lg:block mx-4 bg-green-700 text-white my-40 h-[3rem] lg:bg-red-700 lg:text-gray-900 xl:bg-emerald-800 xl:text-zinc-900 2xl:bg-teal-900 2xl:text-cyan-500 md:text-center lg:w-1/2"
+    >
+      Hey Looks like you are on large screen... BTW I'm responsive
+    </div>
+    <!-- Do you know we can even edit the breakpoints. Hold On we aren't gonna do it now but we will Later. -->
+  </body>
+</html>
