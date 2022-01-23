@@ -11,26 +11,25 @@
     <title>Responsivness</title>
   </head>
   <body>
-    <!-- Hey, the website should not be only for certain device. It should be for all and you can make your website for all devices using responsivness -->
-    <!-- You can do the same using tailwindCss's breakpoint -->
-    <div class="mx-4 bg-green-700 text-white my-40 h-[3rem]">
-      This Div is not responsive
+    <!-- There are several states in CSS like hover, focus, outline etc... -->
+    <h1 class="text-center text-blue-900 mx-auto my-20 text-4xl">
+      Learn States in CSS
+    </h1>
+    <div class="mx-auto text-center bg-red-400 text-white space-x-20 py-[30px]">
+      <!-- hover:[property] it's used to give hover state to element -->
+      <button class="bg-purple-800 p-[12px] rounded-md">Normal Button</button>
+      <button
+        class="bg-purple-800 p-[12px] rounded-md hover:bg-purple-700 active:bg-purple-900 focus:bg-purple-900 focus:border-2 focus:border-white"
+      >
+        Button with States
+      </button>
+      <div class="my-10">
+        <button
+          class="bg-purple-800 p-[12px] rounded-md sm:hover:bg-green-900 md::hover:bg-green-400"
+        >
+          Responsive button with states
+        </button>
+      </div>
     </div>
-    <!-- Productivity tip to make website responsive start from mobile then go for larger view port -->
-    <!-- Don't use sm: to target mobile devices Don't use sm: to target mobile devices Don't use sm: to target mobile devices -->
-    <!-- the above line is thrice to remind myself and a request to whosoever is reading this -->
-    <!-- Use unprefixed utilities to target mobile, and override them at larger breakpoints Use unprefixed utilities to target mobile, and override them at larger breakpoints Use unprefixed utilities to target mobile, and override them at larger breakpoints -->
-    <!-- and the class for small viewport is sm:{your normal classes} In official documentation it's written after 640px width this style is gonna apply -->
-    <div
-      class="lg:hidden mx-4 bg-green-700 text-white my-40 h-[3rem] sm:bg-green-400 sm:text-blue-900 md:bg-yellow-600 md:text-violet-800 lg:bg-red-700 lg:text-gray-900 xl:bg-emerald-800 xl:text-zinc-900 2xl:bg-teal-900 2xl:text-cyan-500 md:text-center lg:w-1/2"
-    >
-      This Div is responsive
-    </div>
-    <div
-      class="hidden lg:block mx-4 bg-green-700 text-white my-40 h-[3rem] lg:bg-red-700 lg:text-gray-900 xl:bg-emerald-800 xl:text-zinc-900 2xl:bg-teal-900 2xl:text-cyan-500 md:text-center lg:w-1/2"
-    >
-      Hey Looks like you are on large screen... BTW I'm responsive
-    </div>
-    <!-- Do you know we can even edit the breakpoints. Hold On we aren't gonna do it now but we will Later. -->
   </body>
 </html>
