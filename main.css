@@ -10,6 +10,7 @@ WILL SEE OUR COMPONENTS LINE.
 ------------------------------
  */
 @tailwind components;
+<<<<<<< HEAD
 .btn{
   @apply text-white bg-gray-900 hover:bg-gray-600 px-3 py-2 rounded-full;
 }
@@ -40,3 +41,6 @@ WILL SEE OUR UTILITIES LINE.
 /* Then when we should use it? */
 /* when same set of classes repeated more than 7 times go and use it. */
 /* PLEASE DONT OVER USE IT */
+=======
+@tailwind utilities;
+>>>>>>> parent of 01d5d06 (apply_directives)
