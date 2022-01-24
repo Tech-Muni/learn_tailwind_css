@@ -13,28 +13,17 @@
   <body>
     <!-- Uptill now you know how to give classes and play with Tailwind -->
     <h1 class="text-center text-blue-900 mx-auto my-20 text-4xl">
-      Learn Layer Directives in Tailwind CSS
+      Learn Customization in Tailwind CSS
     </h1>
-    <div class="text-center">
-      <button class="btn">Click Me</button>
-      <!-- It's css in main.css is in between components and utilities -->
-      <!-- but what is I have 50 apply directives. So that means my `@tailwind utilities;` is after 100s of lines -->
-      <!-- but if you want to write at the end of these `@tailwind base; @tailwind components; @tailwind utilities;` lines we can use layer directive -->
-    </div>
-    <p class="custom-para">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-      asperiores sunt deserunt, fuga excepturi esse quo veniam provident alias
-      placeat a quas, omnis earum? Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. A, voluptates nemo. At totam cumque, ipsum ut officiis
-      error nam nisi tempore soluta consectetur dolor quod cupiditate? Nulla a
-      exercitationem maxime? Fugit explicabo repellat, repudiandae distinctio
-      nulla assumenda expedita voluptates blanditiis pariatur. Accusamus
-      eveniet, natus velit sunt voluptate, corporis aliquam blanditiis, impedit
-      repellat excepturi pariatur aliquid ab suscipit iure eaque obcaecati nisi
-      inventore laboriosam dolores ex possimus odio quas nesciunt eligendi. Iure
-      saepe veniam esse excepturi quo est inventore modi vitae nam obcaecati
-      magnam iste ipsa, quisquam harum id placeat corrupti maxime impedit
-      blanditiis unde ea, officia, libero nihil.
-    </p>
+    <!-- npx tailwindcss init {`customFileName`} --full -->
+    <!-- is to get fully customizable config of tailwind -->
+    <!-- in tailwind there is no class of mx-13 what if I want to use it and it represent 3.2rem -->
+    <!-- go and check customConf.js file there you'll see themes --=> spacing there is no 13 key we can extend it -->
+    <!-- go and check tailwind.config.css -->
+    <!-- NOTE!!!!! THE GENRATED FILE BY YOU WON'T CHANGE ANY THING IT'S JUST FOR REFERENCE -->
+    <p class="mx-13">This is a para with 3.2 rem</p>
+    <!-- we can add our custom animation, font size and much more -->
+    <!-- To customize breakpoint we've to do something different -->
+    <h1 class="text-10xl text-center xsm:bg-green-800 md:bg-emerald-600">10xl heading</h1>
   </body>
 </html>
